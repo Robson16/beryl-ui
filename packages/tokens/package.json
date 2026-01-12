@@ -1,22 +1,26 @@
 {
   "name": "@ignite-ui/tokens",
   "version": "1.0.0",
-  "description": "",
+  "description": "Design tokens for the Ignite UI Design System.",
   "license": "MIT",
-  "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Robson H. Rodrigues",
     "url": "https://github.com/Robson16"
   },
   "keywords": [
     "ignite",
-    "rocketseat"
+    "rocketseat",
+    "typescript"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
   },
   "devDependencies": {
+    "tsup": "8.5.1",
     "typescript": "5.9.3"
   }
 }
