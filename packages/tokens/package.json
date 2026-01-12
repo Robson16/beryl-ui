@@ -1,0 +1,22 @@
+{
+  "name": "@ignite-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "author": {
+    "name": "Robson H. Rodrigues",
+    "url": "https://github.com/Robson16"
+  },
+  "keywords": [
+    "ignite",
+    "rocketseat"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
