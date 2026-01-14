@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Design tokens for the Ignite UI Design System.",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -27,7 +27,8 @@
     "@ignite-ui/eslint-config": "*",
     "@ignite-ui/prettier-config": "*",
     "@ignite-ui/ts-config": "*",
+    "eslint": "^8.57.1",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.5.4"
   }
 }

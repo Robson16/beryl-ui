@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build"
+    "build": "storybook build",
+    "lint": "eslint . --fix"
   },
   "author": {
     "name": "Robson H. Rodrigues",
@@ -21,33 +22,34 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^5.0.0",
+    "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/prettier-config": "*",
     "@ignite-ui/ts-config": "*",
-    "@eslint/js": "^9.39.1",
+    "@storybook/addon-a11y": "^10.1.11",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-onboarding": "^10.1.11",
+    "@storybook/addon-vitest": "^10.1.11",
+    "@storybook/react-vite": "^10.1.11",
     "@types/node": "^24.10.1",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^5.1.1",
-    "eslint": "^9.39.1",
+    "@vitest/browser-playwright": "^4.0.17",
+    "@vitest/coverage-v8": "^4.0.17",
+    "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "typescript": "~5.9.3",
+    "eslint-plugin-storybook": "^10.1.11",
+    "playwright": "^1.57.0",
+    "storybook": "^10.1.11",
+    "typescript": "^5.5.4",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4",
-    "storybook": "^10.1.11",
-    "@storybook/react-vite": "^10.1.11",
-    "@chromatic-com/storybook": "^5.0.0",
-    "@storybook/addon-vitest": "^10.1.11",
-    "@storybook/addon-a11y": "^10.1.11",
-    "@storybook/addon-docs": "^10.1.11",
-    "@storybook/addon-onboarding": "^10.1.11",
-    "eslint-plugin-storybook": "^10.1.11",
-    "vitest": "^4.0.17",
-    "playwright": "^1.57.0",
-    "@vitest/browser-playwright": "^4.0.17",
-    "@vitest/coverage-v8": "^4.0.17"
+    "vitest": "^4.0.17"
   }
 }

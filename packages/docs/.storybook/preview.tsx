@@ -1,5 +1,8 @@
 import type { Preview } from '@storybook/react-vite';
 
+import { ThemeProvider } from 'styled-components';
+import { theme } from '@ignite-ui/react';
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -8,7 +11,6 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-
     a11y: {
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
@@ -16,6 +18,13 @@ const preview: Preview = {
       test: 'todo',
     },
   },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export default preview;

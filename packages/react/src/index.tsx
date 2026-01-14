@@ -1,16 +1,34 @@
-import { styled } from './styles';
+import { css, styled } from './styles';
 
-const Button = styled.button`
-  font-family: ${({ theme }) => theme.fonts.default};
-  background-color: ${({ theme }) => theme.colors.ignite500};
-  border-radius: ${({ theme }) => theme.radii.md};
-  padding: ${({ theme }) => theme.space[4]};
+export { theme } from './styles';
 
-  border: 0;
-  color: ${({ theme }) => theme.colors.white};
-  cursor: pointer;
-`;
-
-export function App() {
-  return <Button>Hello World</Button>;
+export interface ButtonProps {
+  size?: 'small' | 'big';
 }
+
+export const Button = styled.button<ButtonProps>`
+  font-weight: 700;
+  font-family: ${({ theme }) => theme.fonts.default};
+
+  border-radius: ${({ theme }) => theme.radii.sm};
+  border: 0;
+
+  background-color: ${({ theme }) => theme.colors.ignite300};
+  color: ${({ theme }) => theme.colors.white};
+
+  cursor: pointer;
+
+  ${({ size = 'small', theme }) => css`
+    ${size === 'small' &&
+    css`
+      font-size: 14px;
+      padding: ${theme.space[2]} ${theme.space[4]};
+    `}
+
+    ${size === 'big' &&
+    css`
+      font-size: 16px;
+      padding: ${theme.space[3]} ${theme.space[6]};
+    `}
+  `}
+`;
