@@ -1,0 +1,12 @@
+{
+  "extends": "@ignite-ui/ts-config/base.json",
+  "include": [
+    "src",
+    ".storybook"
+  ],
+  "references": [
+    {
+      "path": "../react"
+    }
+  ]
+}
