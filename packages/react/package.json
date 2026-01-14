@@ -20,13 +20,9 @@
     "react"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "lint": "eslint src/**/*.ts* --fix"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src --ext .ts,.tsx --fix"
   },
   "devDependencies": {
     "@ignite-ui/eslint-config": "*",
@@ -34,6 +30,7 @@
     "@ignite-ui/ts-config": "*",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
+    "react": "^18.3.1",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
