@@ -109,6 +109,9 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 
+# Turborepo cache
+.turbo
+
 # Serverless directories
 .serverless/
 
