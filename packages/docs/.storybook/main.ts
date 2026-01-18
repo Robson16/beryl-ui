@@ -21,9 +21,9 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-onboarding'),
   ],
   framework: getAbsolutePath('@storybook/react-vite'),
-  docs: {
-    defaultName: 'Documentation',
-    docsMode: true,
-  },
+  // docs: {
+  //   defaultName: 'Documentation',
+  //   docsMode: true,
+  // },
 };
 export default config;

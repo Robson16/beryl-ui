@@ -42,6 +42,8 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@ignite-ui/tokens": "*"
+    "@ignite-ui/tokens": "*",
+    "@radix-ui/react-avatar": "^1.1.11",
+    "phosphor-react": "^1.4.1"
   }
 }
