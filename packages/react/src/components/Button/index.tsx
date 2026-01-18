@@ -1,8 +1,10 @@
-import { ComponentProps } from 'react';
+import { ComponentProps, ElementType } from 'react';
 
 import { ButtonContainer } from './styles';
 
-export interface ButtonProps extends ComponentProps<typeof ButtonContainer> {}
+export interface ButtonProps extends ComponentProps<typeof ButtonContainer> {
+  as?: ElementType;
+}
 
 export function Button(props: ButtonProps) {
   return <ButtonContainer {...props} />;
