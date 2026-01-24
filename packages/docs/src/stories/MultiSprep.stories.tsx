@@ -1,4 +1,4 @@
-import { Box, MultiStep, MultiStepProps } from '@robson16/react';
+import { Box, MultiStep, MultiStepProps } from '@beryl-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { styled } from 'styled-components';
 

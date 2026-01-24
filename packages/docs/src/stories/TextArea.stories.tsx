@@ -1,4 +1,4 @@
-import { Box, Text, TextArea, TextAreaProps } from '@robson16/react';
+import { Box, Text, TextArea, TextAreaProps } from '@beryl-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { styled } from 'styled-components';
 

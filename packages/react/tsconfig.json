@@ -1,5 +1,13 @@
 {
-  "extends": "@robson16/ts-config/react.json",
+  "extends": "@beryl-ui/ts-config/react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+  },
   "include": [
     "src/**/*"
   ]

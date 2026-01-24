@@ -1,6 +1,6 @@
 {
-  "name": "@robson16/tokens",
-  "version": "1.0.0",
+  "name": "@beryl-ui/tokens",
+  "version": "2.0.0",
   "description": "Design tokens for the Ignite UI Design System.",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -24,9 +24,9 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "devDependencies": {
-    "@robson16/eslint-config": "*",
-    "@robson16/prettier-config": "*",
-    "@robson16/ts-config": "*",
+    "@beryl-ui/eslint-config": "*",
+    "@beryl-ui/prettier-config": "*",
+    "@beryl-ui/ts-config": "*",
     "eslint": "^8.57.1",
     "tsup": "^8.5.1",
     "typescript": "^5.5.4"

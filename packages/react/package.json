@@ -1,6 +1,6 @@
 {
-  "name": "@robson16/react",
-  "version": "1.0.0",
+  "name": "@beryl-ui/react",
+  "version": "2.0.0",
   "description": "React components for the Ignite UI Design System.",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -20,7 +20,7 @@
     "react"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react,styled-components",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src --ext .ts,.tsx --fix"
   },
@@ -30,9 +30,9 @@
     "styled-components": "^6.3.6"
   },
   "devDependencies": {
-    "@robson16/eslint-config": "*",
-    "@robson16/prettier-config": "*",
-    "@robson16/ts-config": "*",
+    "@beryl-ui/eslint-config": "*",
+    "@beryl-ui/prettier-config": "*",
+    "@beryl-ui/ts-config": "*",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "eslint": "^8.57.1",
@@ -41,7 +41,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@robson16/tokens": "*",
+    "@beryl-ui/tokens": "*",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-checkbox": "^1.3.3",
     "phosphor-react": "^1.4.1"

@@ -1,5 +1,5 @@
 {
-  "name": "ignite-design-system",
+  "name": "@beryl-ui/root",
   "version": "1.0.0",
   "description": "Design system created in the Rocketseat Ignite 2022 course.",
   "main": "index.js",
@@ -32,10 +32,14 @@
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=@beryl-ui/docs && changeset publish"
   },
-  "prettier": "@robson16/prettier-config",
+  "prettier": "@beryl-ui/prettier-config",
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "turbo": "^2.7.4"
   }
 }

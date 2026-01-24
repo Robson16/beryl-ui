@@ -10,10 +10,18 @@
         "dist/**",
         "storybook-static/**"
       ],
+      "dependsOn": [
+        "^build"
+      ],
       "inputs": [
         "src/**",
-        "package.json"
-      ],
+        "package.json",
+        "tsconfig.json",
+        "tsup.config.ts",
+        "vite.config.ts"
+      ]
+    },
+    "lint": {
       "dependsOn": [
         "^build"
       ]

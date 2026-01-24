@@ -1,8 +1,8 @@
-# @robson16/react
+# @beryl-ui/react
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@robson16/react">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@robson16/react?color=8257E5&label=%40robson16%2Freact">
+  <a href="https://www.npmjs.com/package/@beryl-ui/react">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/react?color=8257E5&label=%40robson16%2Freact">
   </a>
   <img alt="License" src="https://img.shields.io/github/license/Robson16/ignite-design-system?color=8257E5">
 </p>
@@ -27,11 +27,11 @@ Este pacote contém os componentes React do **Ignite Design System**, construíd
 Para usar os componentes React em seu projeto, instale o pacote via npm, yarn ou pnpm:
 
 ```bash
-npm install @robson16/react styled-components
+npm install @beryl-ui/react styled-components
 # ou
-yarn add @robson16/react styled-components
+yarn add @beryl-ui/react styled-components
 # ou
-pnpm add @robson16/react styled-components
+pnpm add @beryl-ui/react styled-components
 ```
 
 ## ⚙️ Configuração
@@ -40,9 +40,9 @@ Para que os componentes funcionem corretamente com o tema padrão, você precisa
 
 ```tsx
 // Em seu arquivo principal (ex: App.tsx)
-import { globalStyles } from '@robson16/react/styles' // Importe os estilos globais
+import { globalStyles } from '@beryl-ui/react/styles' // Importe os estilos globais
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from '@robson16/react/styles' // Importe o tema padrão
+import { defaultTheme } from '@beryl-ui/react/styles' // Importe o tema padrão
 
 globalStyles() // Aplique os estilos globais
 
@@ -60,7 +60,7 @@ export function App() {
 Exemplo de como usar um componente `Button`:
 
 ```tsx
-import { Button } from '@robson16/react'
+import { Button } from '@beryl-ui/react'
 
 function MyComponent() {
   return (

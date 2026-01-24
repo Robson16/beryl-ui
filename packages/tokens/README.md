@@ -1,8 +1,8 @@
-# @robson16/tokens
+# @beryl-ui/tokens
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@robson16/tokens">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@robson16/tokens?color=8257E5&label=%40robson16%2Ftokens">
+  <a href="https://www.npmjs.com/package/@beryl-ui/tokens">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/tokens?color=8257E5&label=%40robson16%2Ftokens">
   </a>
   <img alt="License" src="https://img.shields.io/github/license/Robson16/ignite-design-system?color=8257E5">
 </p>
@@ -24,11 +24,11 @@ Este pacote contém os design tokens (cores, espaçamentos, tipografia, tamanhos
 Instale este pacote em seus projetos que precisam acessar os valores de design:
 
 ```bash
-npm install @robson16/tokens
+npm install @beryl-ui/tokens
 # ou
-yarn add @robson16/tokens
+yarn add @beryl-ui/tokens
 # ou
-pnpm add @robson16/tokens
+pnpm add @beryl-ui/tokens
 ```
 
 ## ⚙️ Uso
@@ -37,7 +37,7 @@ Você pode importar e usar os tokens diretamente em seu código JavaScript/TypeS
 
 ```javascript
 // Exemplo de uso em um arquivo JavaScript/TypeScript
-import { colors, fontSizes, space } from '@robson16/tokens'
+import { colors, fontSizes, space } from '@beryl-ui/tokens'
 
 console.log(colors.gray800) // #202024
 console.log(fontSizes.md)   // 1rem

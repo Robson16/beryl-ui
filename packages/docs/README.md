@@ -1,13 +1,13 @@
-# @robson16/docs
+# @beryl-ui/docs
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@robson16/docs">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@robson16/docs?color=8257E5&label=%40robson16%2Fdocs">
+  <a href="https://www.npmjs.com/package/@beryl-ui/docs">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/docs?color=8257E5&label=%40robson16%2Fdocs">
   </a>
   <img alt="License" src="https://img.shields.io/github/license/Robson16/ignite-design-system?color=8257E5">
 </p>
 
-Este pacote contém a documentação do **Ignite Design System**, construída com [Storybook](https://storybook.js.org/). Ele serve como um ambiente de desenvolvimento visual e uma vitrine interativa para todos os componentes do `@robson16/react`.
+Este pacote contém a documentação do **Ignite Design System**, construída com [Storybook](https://storybook.js.org/). Ele serve como um ambiente de desenvolvimento visual e uma vitrine interativa para todos os componentes do `@beryl-ui/react`.
 
 > A documentação pode ser visualizada online em: **robson16.github.io/ignite-design-system**
 

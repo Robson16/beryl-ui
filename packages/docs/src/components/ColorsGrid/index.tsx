@@ -1,4 +1,4 @@
-import { colors } from '@robson16/tokens';
+import { colors } from '@beryl-ui/tokens';
 import { getContrast } from 'polished';
 
 export function ColorsGrid() {

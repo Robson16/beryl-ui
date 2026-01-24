@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@robson16/tokens';
+} from '@beryl-ui/tokens';
 
 export const theme = {
   colors,

@@ -1,8 +1,8 @@
-# @robson16/prettier-config
+# @beryl-ui/prettier-config
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@robson16/prettier-config">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@robson16/prettier-config?color=8257E5&label=%40robson16%2Fprettier-config">
+  <a href="https://www.npmjs.com/package/@beryl-ui/prettier-config">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/prettier-config?color=8257E5&label=%40robson16%2Fprettier-config">
   </a>
   <img alt="License" src="https://img.shields.io/github/license/Robson16/ignite-design-system?color=8257E5">
 </p>
@@ -14,11 +14,11 @@ Este pacote contém as configurações de Prettier compartilhadas para o **Ignit
 Instale este pacote e o `prettier` como `devDependencies` em seus projetos:
 
 ```bash
-npm install prettier @robson16/prettier-config --save-dev
+npm install prettier @beryl-ui/prettier-config --save-dev
 # ou
-yarn add prettier @robson16/prettier-config --dev
+yarn add prettier @beryl-ui/prettier-config --dev
 # ou
-pnpm add prettier @robson16/prettier-config --save-dev
+pnpm add prettier @beryl-ui/prettier-config --save-dev
 ```
 
 ## ⚙️ Uso
@@ -29,7 +29,7 @@ Para usar as configurações, estenda-as em seu arquivo `.prettierrc.js` ou adic
 
 ```javascript
 // .prettierrc.js
-module.exports = require('@robson16/prettier-config');
+module.exports = require('@beryl-ui/prettier-config');
 ```
 
 ### Exemplo em `package.json`
@@ -39,7 +39,7 @@ module.exports = require('@robson16/prettier-config');
 {
   "name": "seu-projeto",
   "version": "1.0.0",
-  "prettier": "@robson16/prettier-config"
+  "prettier": "@beryl-ui/prettier-config"
 }
 ```
 

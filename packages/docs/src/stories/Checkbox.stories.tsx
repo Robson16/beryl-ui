@@ -1,4 +1,4 @@
-import { Box, Checkbox, CheckboxProps, Text } from '@robson16/react';
+import { Box, Checkbox, CheckboxProps, Text } from '@beryl-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { styled } from 'styled-components';
 

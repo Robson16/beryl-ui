@@ -1,4 +1,4 @@
-import { Box, BoxProps, Text } from '@robson16/react';
+import { Box, BoxProps, Text } from '@beryl-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 export default {

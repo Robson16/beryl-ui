@@ -1,6 +1,6 @@
 {
-  "name": "@robson16/prettier-config",
-  "version": "1.0.0",
+  "name": "@beryl-ui/prettier-config",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "main": "index.js",

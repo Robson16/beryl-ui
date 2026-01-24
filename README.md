@@ -1,10 +1,10 @@
 # Ignite Design System
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@robson16/react">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@robson16/react?color=8257E5&label=%40robson16%2Freact">
+  <a href="https://www.npmjs.com/package/@beryl-ui/react">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/react?color=8257E5&label=%40robson16%2Freact">
   </a>
-  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Robson16/ignite-design-system/main.yml?branch=main&color=8257E5&label=build">
+  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Robson16/ignite-design-system/deploy-docs.yml?branch=main&color=8257E5&label=build">
   <img alt="License" src="https://img.shields.io/github/license/Robson16/ignite-design-system?color=8257E5">
 </p>
 
@@ -43,11 +43,11 @@ Para utilizar os componentes do **Ignite Design System** em seu projeto, siga os
 Você precisará instalar o pacote principal e suas dependências `peer` (`react`, `react-dom` e `styled-components`).
 
 ```bash
-npm install @robson16/react styled-components
+npm install @beryl-ui/react styled-components
 # ou
-yarn add @robson16/react styled-components
+yarn add @beryl-ui/react styled-components
 # ou
-pnpm add @robson16/react styled-components
+pnpm add @beryl-ui/react styled-components
 ```
 
 ### Configuração
@@ -58,7 +58,7 @@ Para que os componentes funcionem corretamente com o tema padrão, você precisa
 // Em seu arquivo principal (ex: App.tsx)
 import { globalStyles } from './styles/global'
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from '@robson16/react/styles' // Ajuste o caminho se necessário
+import { defaultTheme } from '@beryl-ui/react/styles' // Ajuste o caminho se necessário
 
 globalStyles()
 

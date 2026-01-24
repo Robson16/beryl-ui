@@ -1,5 +1,6 @@
 {
-  "name": "@robson16/docs",
+  "name": "@beryl-ui/docs",
+  "private": true,
   "version": "1.0.0",
   "description": "Docs components for the Ignite UI Design System.",
   "license": "MIT",
@@ -20,8 +21,8 @@
     "react"
   ],
   "dependencies": {
-    "@robson16/react": "*",
-    "@robson16/tokens": "*",
+    "@beryl-ui/react": "*",
+    "@beryl-ui/tokens": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
     "react": "^18.3.1",
@@ -30,9 +31,9 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.0.0",
-    "@robson16/eslint-config": "*",
-    "@robson16/prettier-config": "*",
-    "@robson16/ts-config": "*",
+    "@beryl-ui/eslint-config": "*",
+    "@beryl-ui/prettier-config": "*",
+    "@beryl-ui/ts-config": "*",
     "@storybook/addon-a11y": "^10.1.11",
     "@storybook/addon-docs": "^10.1.11",
     "@storybook/addon-onboarding": "^10.1.11",

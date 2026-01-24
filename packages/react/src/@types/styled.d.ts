@@ -8,7 +8,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@robson16/tokens';
+} from '@beryl-ui/tokens'; 
 
 declare module 'styled-components' {
   export interface DefaultTheme {

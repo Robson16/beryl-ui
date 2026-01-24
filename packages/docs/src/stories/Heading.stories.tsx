@@ -1,4 +1,4 @@
-import { Heading, HeadingProps } from '@robson16/react';
+import { Heading, HeadingProps } from '@beryl-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 export default {

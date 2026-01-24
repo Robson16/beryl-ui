@@ -1,4 +1,4 @@
-import { Text, TextProps } from '@robson16/react';
+import { Text, TextProps } from '@beryl-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 export default {
