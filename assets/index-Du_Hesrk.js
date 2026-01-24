@@ -1,4 +1,4 @@
-import{c as d,j as e}from"./iframe-Dumnoeqi.js";const i=d.table`
+import{c as d,j as e}from"./iframe-KDYkGxI8.js";const i=d.table`
   width: 100%;
   font-family: sans-serif;
   color: #fff;
