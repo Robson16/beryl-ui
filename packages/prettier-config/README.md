@@ -1,10 +1,8 @@
 # @beryl-ui/prettier-config
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@beryl-ui/prettier-config">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/prettier-config?color=8257E5&label=%40beryl-ui%2Fprettier-config">
-  </a>
-  <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=8257E5">
+  <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=10B981&label=license">
+  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Robson16/beryl-ui/deploy-docs.yml?branch=main&color=10B981&label=build">
 </p>
 
 Configuração compartilhada de Prettier para o monorepo **beryl-ui**. Garante formatação de código consistente e profissional em todos os pacotes do sistema.

@@ -2,9 +2,9 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@beryl-ui/tokens">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/tokens?color=8257E5&label=%40beryl-ui%2Ftokens">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/tokens?color=10B981&label=%40beryl-ui%2Ftokens">
   </a>
-  <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=8257E5">
+  <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=10B981&label=license">
 </p>
 
 Design tokens centralizados do **beryl-ui** que definem a identidade visual completa do sistema. Eles servem como fonte única da verdade para cores, espaçamentos, tipografia, bordas e demais valores de design.

@@ -2,9 +2,9 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@beryl-ui/react">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/react?color=8257E5&label=%40beryl-ui%2Freact">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beryl-ui/react?color=10B981&label=%40beryl-ui%2Freact">
   </a>
-  <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=8257E5">
+  <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=10B981&label=license">
 </p>
 
 Biblioteca de componentes React profissionais do **beryl-ui**, construídos com `styled-components` e `Radix UI` para máxima performance e acessibilidade.

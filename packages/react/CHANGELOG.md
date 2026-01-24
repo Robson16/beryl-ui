@@ -1,5 +1,13 @@
 # @beryl-ui/react
 
+## 2.1.2
+
+### Patch Changes
+
+- Docs corrections
+- Updated dependencies
+  - @beryl-ui/tokens@2.1.1
+
 ## 2.1.1
 
 ### Patch Changes

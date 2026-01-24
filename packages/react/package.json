@@ -1,6 +1,6 @@
 {
   "name": "@beryl-ui/react",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "React components for the beryl-ui Design System.",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -12,6 +12,14 @@
   "author": {
     "name": "Robson H. Rodrigues",
     "url": "https://github.com/Robson16"
+  },
+  "homepage": "https://github.com/Robson16/beryl-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robson16/beryl-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Robson16/beryl-ui/issues"
   },
   "keywords": [
     "design-system",

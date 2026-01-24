@@ -1,9 +1,17 @@
 {
   "name": "@beryl-ui/prettier-config",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "license": "MIT",
   "private": true,
   "main": "index.js",
+  "homepage": "https://github.com/Robson16/beryl-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robson16/beryl-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Robson16/beryl-ui/issues"
+  },
   "files": [
     "index.js"
   ],
