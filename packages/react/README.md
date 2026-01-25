@@ -19,8 +19,9 @@ Professional React component library from **beryl-ui**, built with `styled-compo
 *   **Text**: Component for general text.
 *   **TextArea**: Multi-line text field.
 *   **TextInput**: Text input field.
+*   **Toast**: Feedback message for the user (requires `ToastProvider`).
 
-> For interactive documentation and usage examples for each component, visit our **Storybook documentation**.
+> For interactive documentation and usage examples for each component, visit our [**Storybook online**](https://robson16.github.io/beryl-ui/).
 
 ## 🚀 Installation
 

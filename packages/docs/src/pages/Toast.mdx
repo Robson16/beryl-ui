@@ -1,0 +1,69 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks'
+import * as ToastStories from '../stories/Toast.stories'
+
+<Meta of={ToastStories} />
+
+# Toast
+
+Feedback messages for the user, which appear temporarily on the screen to confirm an action or display important information.
+
+Beryl UI's `Toast` is designed to be triggered imperatively from any component of your application. To make this work, you need to follow two simple steps:
+
+## How to Use
+
+### Step 1: Configure the `ToastProvider`
+
+First, wrap the root of your application (or the part of it that needs to display toasts) with `ToastProvider`. This is done only once.
+
+```tsx
+// In your main file (e.g., App.tsx)
+import { ToastProvider } from '@beryl-ui/react'
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from '@beryl-ui/react/styles'
+
+export function App() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <ToastProvider>
+        {/* The rest of your application */}
+      </ToastProvider>
+    </ThemeProvider>
+  )
+}
+```
+
+### Step 2: Launch the Toast with `useToast`
+
+In any child component of `ToastProvider`, import the `useToast` hook to obtain the `showToast` function. Call this function whenever you want to display a message.
+
+<Canvas>
+  <Story of={ToastStories.Primary} />
+</Canvas>
+
+The code for the example above is:
+
+```tsx
+import { Button, useToast } from '@beryl-ui/react'
+
+export function MyComponent() {
+  const { showToast } = useToast()
+
+  function handleAction() {
+    showToast({
+      title: 'Appointment Completed',
+      description: 'Wednesday, October 23rd at 4 PM',
+    })
+  }
+
+  return <Button onClick={handleAction}>Execute Action</Button>
+}
+```
+
+## API
+
+The `showToast` function accepts an object with the following properties (`ToastProps`):
+
+| Property     | Type     | Required | Description                                |
+|--------------|----------|----------|--------------------------------------------|
+| `title`      | `string` | Yes      | The main title of the toast.               |
+| `description`| `string` | No       | An optional descriptive text for the toast.|
