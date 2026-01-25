@@ -7,85 +7,85 @@
   <img alt="License" src="https://img.shields.io/github/license/Robson16/beryl-ui?color=10B981&label=license">
 </p>
 
-Biblioteca de componentes React profissionais do **beryl-ui**, construídos com `styled-components` e `Radix UI` para máxima performance e acessibilidade.
+Professional React component library from **beryl-ui**, built with `styled-components` and `Radix UI` for maximum performance and accessibility.
 
-## ✨ Componentes Incluídos
+## ✨ Included Components
 
-*   **Avatar**: Imagem de exibição com fallback.
-*   **Button**: Botão para ações diversas com variantes.
-*   **Checkbox**: Caixa de seleção.
-*   **Heading**: Título para seções.
-*   **MultiStep**: Indicador de progresso para formulários de múltiplos passos.
-*   **Text**: Componente para textos em geral.
-*   **TextArea**: Campo de texto de múltiplas linhas.
-*   **TextInput**: Campo de entrada de texto.
+*   **Avatar**: Display image with fallback.
+*   **Button**: Button for various actions with variants.
+*   **Checkbox**: Selection box.
+*   **Heading**: Title for sections.
+*   **MultiStep**: Progress indicator for multi-step forms.
+*   **Text**: Component for general text.
+*   **TextArea**: Multi-line text field.
+*   **TextInput**: Text input field.
 
-> Para uma documentação interativa e exemplos de uso de cada componente, visite nosso **Storybook de documentação**.
+> For interactive documentation and usage examples for each component, visit our **Storybook documentation**.
 
-## 🚀 Instalação
+## 🚀 Installation
 
-Para usar os componentes React em seu projeto, instale o pacote via npm, yarn ou pnpm:
+To use the React components in your project, install the package via npm, yarn, or pnpm:
 
 ```bash
 npm install @beryl-ui/react styled-components
-# ou
+# or
 yarn add @beryl-ui/react styled-components
-# ou
+# or
 pnpm add @beryl-ui/react styled-components
 ```
 
-## ⚙️ Configuração
+## ⚙️ Configuration
 
-Para que os componentes funcionem corretamente com o tema padrão, você precisa envolver sua aplicação com o `ThemeProvider` do `styled-components` e aplicar os estilos globais.
+For the components to work correctly with the default theme, you need to wrap your application with the `ThemeProvider` from `styled-components` and apply the global styles.
 
 ```tsx
-// Em seu arquivo principal (ex: App.tsx)
-import { globalStyles } from '@beryl-ui/react/styles' // Importe os estilos globais
+// In your main file (e.g: App.tsx)
+import { globalStyles } from '@beryl-ui/react/styles' // Import global styles
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from '@beryl-ui/react/styles' // Importe o tema padrão
+import { defaultTheme } from '@beryl-ui/react/styles' // Import the default theme
 
-globalStyles() // Aplique os estilos globais
+globalStyles() // Apply global styles
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      {/* ... seus componentes e rotas que usarão o design system ... */}
+      {/* ... your components and routes that will use the design system ... */}
     </ThemeProvider>
   )
 }
 ```
 
-## 💡 Uso Básico
+## 💡 Basic Usage
 
-Exemplo de como usar um componente `Button`:
+Example of how to use a `Button` component:
 
 ```tsx
 import { Button } from '@beryl-ui/react'
 
 function MyComponent() {
   return (
-    <Button onClick={() => alert('Clicado!')}>
-      Clique aqui
+    <Button onClick={() => alert('Clicked!')}>
+      Click here
     </Button>
   )
 }
 ```
 
-## 🛠️ Desenvolvimento Local (para contribuidores)
+## 🛠️ Local Development (for contributors)
 
-Se você está contribuindo para este pacote especificamente dentro do monorepo:
+If you are contributing to this package specifically within the monorepo:
 
-1.  **Navegue até a pasta do pacote:**
+1.  **Navigate to the package folder:**
     ```bash
     cd packages/react
     ```
-2.  **Execute o modo de desenvolvimento:**
-    Para compilar o pacote em modo `watch` e ver as alterações em tempo real (geralmente usado em conjunto com o Storybook do monorepo):
+2.  **Run development mode:**
+    To compile the package in `watch` mode and see changes in real-time (usually used in conjunction with the monorepo's Storybook):
     ```bash
     npm run dev
     ```
-    (Este script `dev` é definido no `package.json` de `packages/react` e usa `tsup` para observar as mudanças).
+    (This `dev` script is defined in the `package.json` of `packages/react` and uses `tsup` to watch for changes).
 
-## 📄 Licença
+## 📄 License
 
-Este pacote está sob a licença MIT. Veja o arquivo LICENSE.md na raiz do repositório para mais detalhes.
+This package is under the MIT license. See the LICENSE.md file in the root of the repository for more details.

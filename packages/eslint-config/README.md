@@ -5,34 +5,34 @@
   <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Robson16/beryl-ui/deploy-docs.yml?branch=main&color=10B981&label=build">
 </p>
 
-Configuração compartilhada de ESLint para o monorepo **beryl-ui**. Estabelece padrões consistentes de qualidade de código e detecção de problemas em potencial em todos os pacotes do sistema.
+Shared ESLint configuration for the **beryl-ui** monorepo. Establishes consistent code quality standards and detects potential issues in all packages of the system.
+ 
+## 🚀 Installation
 
-## 🚀 Instalação
-
-Instale este pacote e suas dependências `peer` como `devDependencies` em seus projetos:
+Install this package and its `peer` dependencies as `devDependencies` in your projects:
 
 ```bash
 npm install eslint @beryl-ui/eslint-config --save-dev
-# ou
+# or
 yarn add eslint @beryl-ui/eslint-config --dev
-# ou
+# or
 pnpm add eslint @beryl-ui/eslint-config --save-dev
 ```
 
-Você também precisará instalar as dependências de plugins que este pacote estende, como `@typescript-eslint/eslint-plugin`, `eslint-plugin-react`, etc. Verifique o `package.json` deste pacote para a lista completa de `peerDependencies`.
+You will also need to install the plugin dependencies that this package extends, such as `@typescript-eslint/eslint-plugin`, `eslint-plugin-react`, etc. Check the `package.json` of this package for the complete list of `peerDependencies`.
 
-## ⚙️ Uso
+## ⚙️ Usage
 
-Para usar as configurações, estenda-as em seu arquivo `.eslintrc.json` ou `eslint.config.js`.
+To use the configurations, extend them in your `.eslintrc.json` or `eslint.config.js` file.
 
-### Exemplo de `.eslintrc.json`
+### Example of `.eslintrc.json`
 
 ```json
 // .eslintrc.json
 {
   "extends": [
     "@beryl-ui/eslint-config"
-    // Adicione outras configurações ou overrides aqui, se necessário
+    // Add other configurations or overrides here if needed
   ],
   "root": true,
   "env": {
@@ -42,6 +42,6 @@ Para usar as configurações, estenda-as em seu arquivo `.eslintrc.json` ou `esl
 }
 ```
 
-## 📄 Licença
+## 📄 License
 
-Este pacote está sob a licença MIT. Veja o arquivo LICENSE.md na raiz do repositório para mais detalhes.
+This package is under the MIT license. See the LICENSE.md file in the root of the repository for more details.

@@ -5,42 +5,42 @@
   <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Robson16/beryl-ui/deploy-docs.yml?branch=main&color=10B981&label=build">
 </p>
 
-Configuração compartilhada de Prettier para o monorepo **beryl-ui**. Garante formatação de código consistente e profissional em todos os pacotes do sistema.
+Shared Prettier configuration for the **beryl-ui** monorepo. Ensures consistent and professional code formatting across all packages of the system.
 
-## 🚀 Instalação
+## 🚀 Installation 
 
-Instale este pacote e o `prettier` como `devDependencies` em seus projetos:
+Install this package and `prettier` as `devDependencies` in your projects:
 
 ```bash
 npm install prettier @beryl-ui/prettier-config --save-dev
-# ou
+# or
 yarn add prettier @beryl-ui/prettier-config --dev
-# ou
+# or
 pnpm add prettier @beryl-ui/prettier-config --save-dev
 ```
 
-## ⚙️ Uso
+## ⚙️ Usage
 
-Para usar as configurações, estenda-as em seu arquivo `.prettierrc.js` ou adicione uma entrada `prettier` em seu `package.json`.
+To use the configurations, extend them in your `.prettierrc.js` file or add a `prettier` entry in your `package.json`.
 
-### Exemplo de `.prettierrc.js`
+### Example of `.prettierrc.js`
 
 ```javascript
 // .prettierrc.js
 module.exports = require('@beryl-ui/prettier-config');
 ```
 
-### Exemplo em `package.json`
+### Example in `package.json`
 
 ```json
 // package.json
 {
-  "name": "seu-projeto",
+  "name": "your-project",
   "version": "1.0.0",
   "prettier": "@beryl-ui/prettier-config"
 }
 ```
 
-## 📄 Licença
+## 📄 License
 
-Este pacote está sob a licença MIT. Veja o arquivo LICENSE.md na raiz do repositório para mais detalhes.
+This package is under the MIT license. See the LICENSE.md file in the root of the repository for more details.

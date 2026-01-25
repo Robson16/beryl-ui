@@ -9,91 +9,91 @@
 </p>
 
 <p align="center">
-  Sistema de design robusto e profissional para aplicações React. Uma biblioteca completa de componentes reutilizáveis e bem-documentados.
+  A robust and professional design system for React applications. A complete library of reusable and well-documented components.
 </p>
 
 <p align="center">
-  <a href="#-componentes">Componentes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-começando">Começando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-desenvolvimento-local">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#-components">Components</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-local-development">Development</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
 
-> **Documentação:** Visualize todos os componentes e sua documentação completa em nosso [**Storybook online**](https://robson16.github.io/beryl-ui/).
+> **Documentation:** View all components and their complete documentation in our [**Storybook online**](https://robson16.github.io/beryl-ui/).
 
-## ✨ Componentes
+## ✨ Components
 
-Lista de componentes que foram desenvolvidos e estão prontos para uso:
+List of components that have been developed and are ready to use:
 
-- [x] **Avatar**: Imagem de exibição com fallback.
-- [x] **Button**: Botão para ações diversas com variantes.
-- [x] **Checkbox**: Caixa de seleção.
-- [x] **Heading**: Título para seções.
-- [x] **MultiStep**: Indicador de progresso para formulários de múltiplos passos.
-- [x] **Text**: Componente para textos em geral.
-- [x] **TextArea**: Campo de texto de múltiplas linhas.
-- [x] **TextInput**: Campo de entrada de texto.
+- [x] **Avatar**: Display image with fallback.
+- [x] **Button**: Button for various actions with variants.
+- [x] **Checkbox**: Selection box.
+- [x] **Heading**: Title for sections.
+- [x] **MultiStep**: Progress indicator for multi-step forms.
+- [x] **Text**: Component for general text.
+- [x] **TextArea**: Multi-line text field.
+- [x] **TextInput**: Text input field.
 
-## 🚀 Começando
+## 🚀 Getting Started 
 
-Para utilizar os componentes do **beryl-ui** em seu projeto, siga os passos abaixo.
+To use the **beryl-ui** components in your project, follow the steps below.
 
-### Instalação
+### Installation
 
-Você precisará instalar o pacote principal e suas dependências `peer` (`react`, `react-dom` e `styled-components`).
+You will need to install the main package and its `peer` dependencies (`react`, `react-dom`, and `styled-components`).
 
 ```bash
 npm install @beryl-ui/react styled-components
-# ou
+# or
 yarn add @beryl-ui/react styled-components
-# ou
+# or
 pnpm add @beryl-ui/react styled-components
 ```
 
-### Configuração
+### Configuration
 
-Para que os componentes funcionem corretamente com o tema padrão, você precisa envolver sua aplicação com o `ThemeProvider` do `styled-components`.
+For the components to work correctly with the default theme, you need to wrap your application with the `ThemeProvider` from `styled-components`.
 
 ```tsx
-// Em seu arquivo principal (ex: App.tsx)
+// In your main file (e.g: App.tsx)
 import { globalStyles } from './styles/global'
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from '@beryl-ui/react/styles' // Ajuste o caminho se necessário
+import { defaultTheme } from '@beryl-ui/react/styles' // Adjust the path if needed
 
 globalStyles()
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      {/* ... seu código e rotas ... */}
+      {/* ... your code and routes ... */}
     </ThemeProvider>
   )
 }
 ```
 
-## 💻 Desenvolvimento Local
+## 💻 Local Development
 
-Se você deseja contribuir para o projeto, siga estas instruções para configurar o ambiente de desenvolvimento.
+If you want to contribute to the project, follow these instructions to set up your development environment.
 
-1.  **Clone o repositório:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/Robson16/beryl-ui.git
     cd beryl-ui
     ```
 
-2.  **Instale as dependências:**
-    Este é um monorepo configurado com workspaces. Use o NPM para instalar as dependências de todos os pacotes.
+2.  **Install dependencies:**
+    This is a monorepo configured with workspaces. Use NPM to install dependencies for all packages.
     ```bash
     npm install
     ```
 
-3.  **Execute o ambiente de desenvolvimento:**
-    Este projeto usa **Turborepo** para gerenciar os scripts do monorepo. Para iniciar o Storybook e os pacotes em modo de desenvolvimento, execute:
+3.  **Run the development environment:**
+    This project uses **Turborepo** to manage the monorepo scripts. To start Storybook and packages in development mode, run:
     ```bash
     npm run dev
     ```
-    > Este comando executará o script `dev` de todos os pacotes em paralelo, permitindo que você visualize os componentes no Storybook e faça alterações no código-fonte.
+    > This command will run the `dev` script for all packages in parallel, allowing you to view components in Storybook and make changes to the source code.
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE.md para mais detalhes.
+This project is under the MIT license. See the LICENSE.md file for more details.
