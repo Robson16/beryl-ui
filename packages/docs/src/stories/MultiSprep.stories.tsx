@@ -1,6 +1,6 @@
-import { Box, MultiStep, MultiStepProps } from '@beryl-ui/react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { styled } from 'styled-components';
+import { Box, MultiStep, MultiStepProps } from "@beryl-ui/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { styled } from "styled-components";
 
 const StoryBox = styled(Box)`
   display: flex;
@@ -9,7 +9,7 @@ const StoryBox = styled(Box)`
 `;
 
 export default {
-  title: 'Form/Multi Step',
+  title: "Form/Multi Step",
   component: MultiStep,
   args: {
     size: 4,

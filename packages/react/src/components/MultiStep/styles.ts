@@ -1,11 +1,11 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
-import { Text } from '../Text';
+import { Text } from "../Text";
 
 export const MultiStepContainer = styled.div``;
 
 export const Label = styled(Text).attrs({
-  size: 'xs',
+  size: "xs",
 })`
   color: ${({ theme }) => theme.colors.gray200};
 `;

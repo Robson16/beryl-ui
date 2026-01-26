@@ -1,17 +1,17 @@
-import { Avatar, AvatarProps } from '@beryl-ui/react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Avatar, AvatarProps } from "@beryl-ui/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 export default {
-  title: 'Data display/Avatar',
+  title: "Data display/Avatar",
   component: Avatar,
   args: {
-    src: 'https://github.com/Robson16.png',
-    alt: 'Robson H. Rodrigues',
+    src: "https://github.com/Robson16.png",
+    alt: "Robson H. Rodrigues",
   },
   argTypes: {
     src: {
       control: {
-        type: 'text',
+        type: "text",
       },
     },
   },

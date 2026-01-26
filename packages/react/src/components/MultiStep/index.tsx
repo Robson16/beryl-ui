@@ -1,4 +1,4 @@
-import { Label, MultiStepContainer, Step, Steps } from './styles';
+import { Label, MultiStepContainer, Step, Steps } from "./styles";
 
 export interface MultiStepProps {
   size: number;
@@ -21,4 +21,4 @@ export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
   );
 }
 
-MultiStep.displayName = 'MultiStep';
+MultiStep.displayName = "MultiStep";

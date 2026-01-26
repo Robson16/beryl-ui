@@ -1,7 +1,7 @@
-import { Check } from 'phosphor-react';
-import { ComponentProps } from 'react';
+import { Check } from "phosphor-react";
+import { ComponentProps } from "react";
 
-import { CheckboxContainer, CheckboxIndicator } from './styles';
+import { CheckboxContainer, CheckboxIndicator } from "./styles";
 
 export interface CheckboxProps extends ComponentProps<
   typeof CheckboxContainer
@@ -17,4 +17,4 @@ export function Checkbox(props: CheckboxProps) {
   );
 }
 
-Checkbox.displayName = 'Checkbox';
+Checkbox.displayName = "Checkbox";

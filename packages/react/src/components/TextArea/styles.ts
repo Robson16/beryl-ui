@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const TextAreaContainer = styled.textarea`
   background-color: ${({ theme }) => theme.colors.gray900};

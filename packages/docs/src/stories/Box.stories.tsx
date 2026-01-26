@@ -1,8 +1,8 @@
-import { Box, BoxProps, Text } from '@beryl-ui/react';
-import type { Meta, StoryObj } from '@storybook/react';
+import { Box, BoxProps, Text } from "@beryl-ui/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 export default {
-  title: 'Surfaces/Box',
+  title: "Surfaces/Box",
   component: Box,
   args: {
     children: <Text>Testing the Box element</Text>,

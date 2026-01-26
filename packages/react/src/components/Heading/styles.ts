@@ -1,7 +1,7 @@
-import { css, styled } from 'styled-components';
+import { css, styled } from "styled-components";
 
 export interface HeadingContainerProps {
-  size?: 'sm' | 'md' | 'lg' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl';
+  size?: "sm" | "md" | "lg" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl";
 }
 
 const sizeVariants = {
@@ -9,25 +9,25 @@ const sizeVariants = {
     font-size: ${({ theme }) => theme.fontSizes.xl};
   `,
   md: css`
-    font-size: ${({ theme }) => theme.fontSizes['2xl']};
+    font-size: ${({ theme }) => theme.fontSizes["2xl"]};
   `,
   lg: css`
-    font-size: ${({ theme }) => theme.fontSizes['4xl']};
+    font-size: ${({ theme }) => theme.fontSizes["4xl"]};
   `,
-  '2xl': css`
-    font-size: ${({ theme }) => theme.fontSizes['5xl']};
+  "2xl": css`
+    font-size: ${({ theme }) => theme.fontSizes["5xl"]};
   `,
-  '3xl': css`
-    font-size: ${({ theme }) => theme.fontSizes['6xl']};
+  "3xl": css`
+    font-size: ${({ theme }) => theme.fontSizes["6xl"]};
   `,
-  '4xl': css`
-    font-size: ${({ theme }) => theme.fontSizes['7xl']};
+  "4xl": css`
+    font-size: ${({ theme }) => theme.fontSizes["7xl"]};
   `,
-  '5xl': css`
-    font-size: ${({ theme }) => theme.fontSizes['8xl']};
+  "5xl": css`
+    font-size: ${({ theme }) => theme.fontSizes["8xl"]};
   `,
-  '6xl': css`
-    font-size: ${({ theme }) => theme.fontSizes['9xl']};
+  "6xl": css`
+    font-size: ${({ theme }) => theme.fontSizes["9xl"]};
   `,
 };
 
@@ -37,5 +37,5 @@ export const HeadingContainer = styled.h2<HeadingContainerProps>`
   margin: 0;
   color: ${({ theme }) => theme.colors.gray100};
 
-  ${({ size = 'md' }) => sizeVariants[size]}
+  ${({ size = "md" }) => sizeVariants[size]}
 `;

@@ -1,13 +1,14 @@
-import * as RadixToast from '@radix-ui/react-toast';
-import { X } from 'phosphor-react';
-import { createContext, ReactNode, useContext, useState } from 'react';
+import * as RadixToast from "@radix-ui/react-toast";
+import { X } from "phosphor-react";
+import { createContext, ReactNode, useContext, useState } from "react";
+
 import {
   ToastClose,
   ToastDescription,
   ToastRoot,
   ToastTitle,
   ToastViewport,
-} from './styles';
+} from "./styles";
 
 // Internal state type
 interface ToastData {
@@ -17,7 +18,7 @@ interface ToastData {
 }
 
 // Props for the showToast function, exposed to the user
-export type ToastProps = Omit<ToastData, 'id'>;
+export type ToastProps = Omit<ToastData, "id">;
 
 interface ToastContextData {
   showToast: (props: ToastProps) => void;
@@ -80,7 +81,7 @@ export const useToast = () => {
   const context = useContext(ToastContext);
 
   if (!context) {
-    throw new Error('useToast must be used within a ToastProvider');
+    throw new Error("useToast must be used within a ToastProvider");
   }
 
   return context;

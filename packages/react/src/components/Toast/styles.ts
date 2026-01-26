@@ -1,5 +1,5 @@
-import * as Toast from '@radix-ui/react-toast';
-import { keyframes, styled } from 'styled-components';
+import * as Toast from "@radix-ui/react-toast";
+import { keyframes, styled } from "styled-components";
 
 const VIEWPORT_PADDING = 32;
 
@@ -36,7 +36,7 @@ export const ToastViewport = styled(Toast.Viewport)`
 
 export const ToastRoot = styled(Toast.Root)`
   display: grid;
-  grid-template-areas: 'title action' 'description action';
+  grid-template-areas: "title action" "description action";
   grid-template-columns: auto max-content;
   column-gap: ${({ theme }) => theme.space[5]};
   padding: ${({ theme }) => `${theme.space[3]} ${theme.space[5]}`};
@@ -44,24 +44,24 @@ export const ToastRoot = styled(Toast.Root)`
   border-radius: ${({ theme }) => theme.radii.sm};
   background-color: ${({ theme }) => theme.colors.gray800};
 
-  &[data-state='open'] {
+  &[data-state="open"] {
     animation: ${slideIn} 150ms cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  &[data-state='closed'] {
+  &[data-state="closed"] {
     animation: ${hide} 100ms ease-in;
   }
 
-  &[data-swipe='move'] {
+  &[data-swipe="move"] {
     transform: translateX(var(--radix-toast-swipe-move-x));
   }
 
-  &[data-swipe='cancel'] {
+  &[data-swipe="cancel"] {
     transform: translateX(0);
     transition: transform 200ms ease-out;
   }
 
-  &[data-swipe='end'] {
+  &[data-swipe="end"] {
     animation: ${swipeOut} 100ms ease-out;
   }
 `;

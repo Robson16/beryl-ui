@@ -1,6 +1,6 @@
-import { Box, Text, TextArea, TextAreaProps } from '@beryl-ui/react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { styled } from 'styled-components';
+import { Box, Text, TextArea, TextAreaProps } from "@beryl-ui/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { styled } from "styled-components";
 
 const StoryBox = styled(Box)`
   display: flex;
@@ -9,7 +9,7 @@ const StoryBox = styled(Box)`
 `;
 
 export default {
-  title: 'Form/Text Area',
+  title: "Form/Text Area",
   component: TextArea,
   args: {},
   decorators: [
@@ -26,7 +26,7 @@ export default {
 
 export const Primary: StoryObj<TextAreaProps> = {
   args: {
-    placeholder: 'Add any observations...',
+    placeholder: "Add any observations...",
   },
 };
 

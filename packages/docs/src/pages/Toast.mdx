@@ -1,5 +1,6 @@
-import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks'
-import * as ToastStories from '../stories/Toast.stories'
+import { Canvas, Meta, Story } from "@storybook/addon-docs/blocks";
+
+import * as ToastStories from "../stories/Toast.stories";
 
 <Meta of={ToastStories} />
 
@@ -17,18 +18,16 @@ First, wrap the root of your application (or the part of it that needs to displa
 
 ```tsx
 // In your main file (e.g., App.tsx)
-import { ToastProvider } from '@beryl-ui/react'
-import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from '@beryl-ui/react/styles'
+import { ToastProvider } from "@beryl-ui/react";
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "@beryl-ui/react/styles";
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <ToastProvider>
-        {/* The rest of your application */}
-      </ToastProvider>
+      <ToastProvider>{/* The rest of your application */}</ToastProvider>
     </ThemeProvider>
-  )
+  );
 }
 ```
 
@@ -43,19 +42,19 @@ In any child component of `ToastProvider`, import the `useToast` hook to obtain 
 The code for the example above is:
 
 ```tsx
-import { Button, useToast } from '@beryl-ui/react'
+import { Button, useToast } from "@beryl-ui/react";
 
 export function MyComponent() {
-  const { showToast } = useToast()
+  const { showToast } = useToast();
 
   function handleAction() {
     showToast({
-      title: 'Appointment Completed',
-      description: 'Wednesday, October 23rd at 4 PM',
-    })
+      title: "Appointment Completed",
+      description: "Wednesday, October 23rd at 4 PM",
+    });
   }
 
-  return <Button onClick={handleAction}>Execute Action</Button>
+  return <Button onClick={handleAction}>Execute Action</Button>;
 }
 ```
 
@@ -63,7 +62,7 @@ export function MyComponent() {
 
 The `showToast` function accepts an object with the following properties (`ToastProps`):
 
-| Property     | Type     | Required | Description                                |
-|--------------|----------|----------|--------------------------------------------|
-| `title`      | `string` | Yes      | The main title of the toast.               |
-| `description`| `string` | No       | An optional descriptive text for the toast.|
+| Property      | Type     | Required | Description                                 |
+| ------------- | -------- | -------- | ------------------------------------------- |
+| `title`       | `string` | Yes      | The main title of the toast.                |
+| `description` | `string` | No       | An optional descriptive text for the toast. |

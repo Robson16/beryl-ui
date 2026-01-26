@@ -1,5 +1,5 @@
-import * as Checkbox from '@radix-ui/react-checkbox';
-import { keyframes, styled } from 'styled-components';
+import * as Checkbox from "@radix-ui/react-checkbox";
+import { keyframes, styled } from "styled-components";
 
 export const CheckboxContainer = styled(Checkbox.Root)`
   all: unset;
@@ -17,11 +17,11 @@ export const CheckboxContainer = styled(Checkbox.Root)`
   border: 2px solid ${({ theme }) => theme.colors.gray900};
 
   &:focus,
-  &[data-state='checked'] {
+  &[data-state="checked"] {
     border: 2px solid ${({ theme }) => theme.colors.emerald300};
   }
 
-  &[data-state='checked'] {
+  &[data-state="checked"] {
     background-color: ${({ theme }) => theme.colors.emerald300};
   }
 `;
@@ -41,11 +41,11 @@ export const CheckboxIndicator = styled(Checkbox.Indicator)`
   width: ${({ theme }) => theme.space[4]};
   height: ${({ theme }) => theme.space[4]};
 
-  &[data-state='checked'] {
+  &[data-state="checked"] {
     animation: ${slideIn} 200ms ease-out;
   }
 
-  &[data-state='unchecked'] {
+  &[data-state="unchecked"] {
     animation: ${slideOut} 200ms ease-out;
   }
 `;

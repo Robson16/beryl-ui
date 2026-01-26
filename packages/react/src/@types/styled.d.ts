@@ -1,4 +1,4 @@
-import 'styled-components';
+import "styled-components";
 
 import {
   colors,
@@ -8,9 +8,9 @@ import {
   lineHeights,
   radii,
   space,
-} from '@beryl-ui/tokens'; 
+} from "@beryl-ui/tokens";
 
-declare module 'styled-components' {
+declare module "styled-components" {
   export interface DefaultTheme {
     colors: typeof colors;
     fontSizes: typeof fontSizes;

@@ -1,5 +1,5 @@
-import * as Avatar from '@radix-ui/react-avatar';
-import styled from 'styled-components';
+import * as Avatar from "@radix-ui/react-avatar";
+import styled from "styled-components";
 
 export const AvatarContainer = styled(Avatar.Root)`
   border-radius: ${({ theme }) => theme.radii.full};

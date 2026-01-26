@@ -1,7 +1,7 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 interface TextInputContainerProps {
-  size?: 'sm' | 'md';
+  size?: "sm" | "md";
 }
 
 export const TextInputContainer = styled.div<TextInputContainerProps>`
@@ -12,7 +12,7 @@ export const TextInputContainer = styled.div<TextInputContainerProps>`
   display: flex;
   align-items: center;
 
-  padding: ${({ theme, size = 'md' }) => {
+  padding: ${({ theme, size = "md" }) => {
     const paddingMap = {
       sm: `${theme.space[2]} ${theme.space[3]}`,
       md: `${theme.space[3]} ${theme.space[4]}`,

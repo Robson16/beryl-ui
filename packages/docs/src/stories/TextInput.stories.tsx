@@ -1,6 +1,6 @@
-import { Box, Text, TextInput, TextInputProps } from '@beryl-ui/react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { styled } from 'styled-components';
+import { Box, Text, TextInput, TextInputProps } from "@beryl-ui/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { styled } from "styled-components";
 
 const StoryBox = styled(Box)`
   display: flex;
@@ -9,7 +9,7 @@ const StoryBox = styled(Box)`
 `;
 
 export default {
-  title: 'Form/Text Input',
+  title: "Form/Text Input",
   component: TextInput,
   args: {},
   decorators: [
@@ -26,7 +26,7 @@ export default {
 
 export const Primary: StoryObj<TextInputProps> = {
   args: {
-    placeholder: 'Type your name',
+    placeholder: "Type your name",
   },
 };
 
@@ -38,7 +38,7 @@ export const Disabled: StoryObj<TextInputProps> = {
 
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
-    prefix: 'cal.com/',
-    placeholder: 'your-username',
+    prefix: "cal.com/",
+    placeholder: "your-username",
   },
 };

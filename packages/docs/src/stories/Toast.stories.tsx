@@ -1,6 +1,6 @@
-import { Button, ToastProvider, useToast } from '@beryl-ui/react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { styled } from 'styled-components';
+import { Button, ToastProvider, useToast } from "@beryl-ui/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { styled } from "styled-components";
 
 const ToastDemo = () => {
   const { showToast } = useToast();
@@ -9,8 +9,8 @@ const ToastDemo = () => {
     <Button
       onClick={() =>
         showToast({
-          title: 'Appointment Completed',
-          description: 'Wednesday, October 23rd at 4 PM',
+          title: "Appointment Completed",
+          description: "Wednesday, October 23rd at 4 PM",
         })
       }
     >
@@ -28,7 +28,7 @@ const StoryContainer = styled.div`
 `;
 
 export default {
-  title: 'Feedback/Toast',
+  title: "Feedback/Toast",
   component: ToastDemo,
   decorators: [
     (Story) => (
@@ -40,11 +40,11 @@ export default {
     ),
   ],
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
     docs: {
       description: {
         component:
-          'To use Toast, the application needs to be wrapped by `ToastProvider`. This is an interactive demonstration.',
+          "To use Toast, the application needs to be wrapped by `ToastProvider`. This is an interactive demonstration.",
       },
     },
   },
