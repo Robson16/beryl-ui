@@ -1,0 +1,54 @@
+import { Tooltip, TooltipProvider } from "@beryl-ui/react";
+import { Canvas, Controls, Meta, Story } from "@storybook/addon-docs/blocks";
+import { Star } from "phosphor-react";
+
+import * as TooltipStories from "../stories/Tooltip.stories";
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+Dica de texto que aparece quando o usuário passa o mouse, foca ou toca em um elemento.
+
+<Canvas>
+  <Story of={TooltipStories.Primary} />
+</Canvas>
+
+## Como Usar
+
+O componente `Tooltip` é um wrapper. Envolva o elemento que irá disparar o tooltip (o "gatilho") com ele e passe o conteúdo a ser exibido na propriedade `content`.
+
+```tsx
+import { Tooltip, Button } from "@beryl-ui/react";
+import { Star } from "phosphor-react";
+
+export function MyComponent() {
+  return (
+    <Tooltip content="Adicionar aos favoritos">
+      <Button>
+        <Star />
+      </Button>
+    </Tooltip>
+  );
+}
+```
+
+### Provider (Opcional)
+
+Para um controle mais refinado sobre todos os tooltips da sua aplicação (como a duração do delay para aparecer), você pode envolver sua aplicação com o `TooltipProvider` (exportado do nosso pacote).
+
+```tsx
+import { TooltipProvider } from "@beryl-ui/react";
+
+export function App() {
+  return (
+    <TooltipProvider delayDuration={300}>
+      {/* O resto da sua aplicação */}
+    </TooltipProvider>
+  );
+}
+```
+
+## API
+
+<Controls />

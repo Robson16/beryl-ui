@@ -34,6 +34,7 @@ List of components that have been developed and are ready to use:
 - [x] **TextArea**: Multi-line text field.
 - [x] **TextInput**: Text input field.
 - [x] **Toast**: Feedback message for the user.
+- [x] **Tooltip**: Text hint with contextual information.
 
 ## 🚀 Getting Started 
 

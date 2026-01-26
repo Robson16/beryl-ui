@@ -1,13 +1,17 @@
-import { ComponentProps, ElementType } from 'react';
+import { ComponentProps, ElementType, forwardRef, ReactNode } from "react";
 
-import { HeadingContainer } from './styles';
+import { HeadingContainer, HeadingContainerProps } from "./styles";
 
-export interface HeadingProps extends ComponentProps<typeof HeadingContainer> {
+export interface HeadingProps
+  extends ComponentProps<"h2">, HeadingContainerProps {
   as?: ElementType;
+  children?: ReactNode;
 }
 
-export function Heading(props: HeadingProps) {
-  return <HeadingContainer {...props} />;
-}
+export const Heading = forwardRef<HTMLHeadingElement, HeadingProps>(
+  (props, ref) => {
+    return <HeadingContainer ref={ref} {...props} />;
+  },
+);
 
-Heading.displayName = 'Heading';
+Heading.displayName = "Heading";

@@ -1,11 +1,11 @@
-import { css, styled } from 'styled-components';
+import { css, styled } from "styled-components";
 
-export interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'tertiary';
-  size?: 'sm' | 'md';
+export interface ButtonContainerProps {
+  variant?: "primary" | "secondary" | "tertiary";
+  size?: "sm" | "md";
 }
 
-export const ButtonContainer = styled.button<ButtonProps>`
+export const ButtonContainer = styled.button<ButtonContainerProps>`
   all: unset;
   box-sizing: border-box;
 
@@ -37,9 +37,9 @@ export const ButtonContainer = styled.button<ButtonProps>`
     height: ${({ theme }) => theme.space[4]};
   }
 
-  ${({ variant = 'primary', theme }) => {
+  ${({ variant = "primary", theme }) => {
     switch (variant) {
-      case 'primary':
+      case "primary":
         return css`
           color: ${theme.colors.white};
           background: ${theme.colors.emerald500};
@@ -52,7 +52,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
             background-color: ${theme.colors.gray200};
           }
         `;
-      case 'secondary':
+      case "secondary":
         return css`
           color: ${theme.colors.emerald300};
           border: 2px solid ${theme.colors.emerald500};
@@ -67,7 +67,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
             border-color: ${theme.colors.gray200};
           }
         `;
-      case 'tertiary':
+      case "tertiary":
         return css`
           color: ${theme.colors.gray100};
 
@@ -82,13 +82,13 @@ export const ButtonContainer = styled.button<ButtonProps>`
     }
   }}
 
-  ${({ size = 'md' }) => {
+  ${({ size = "md" }) => {
     switch (size) {
-      case 'sm':
+      case "sm":
         return css`
           height: 38px;
         `;
-      case 'md':
+      case "md":
         return css`
           height: 46px;
         `;

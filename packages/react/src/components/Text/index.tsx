@@ -1,13 +1,16 @@
-import { ComponentProps, ElementType } from 'react';
+import { ComponentProps, ElementType, forwardRef, ReactNode } from "react";
 
-import { TextContainer } from './styles';
+import { TextContainer, TextContainerProps } from "./styles";
 
-export interface TextProps extends ComponentProps<typeof TextContainer> {
+export interface TextProps extends ComponentProps<"p">, TextContainerProps {
   as?: ElementType;
+  children?: ReactNode;
 }
 
-export function Text(props: TextProps) {
-  return <TextContainer {...props} />;
-}
+export const Text = forwardRef<HTMLParagraphElement, TextProps>(
+  (props, ref) => {
+    return <TextContainer ref={ref} {...props} />;
+  },
+);
 
-Text.displayName = 'Text';
+Text.displayName = "Text";

@@ -1,13 +1,17 @@
-import { ComponentProps, ElementType } from 'react';
+import { ComponentProps, ElementType, forwardRef, ReactElement } from "react";
 
-import { ButtonContainer } from './styles';
+import { ButtonContainer, ButtonContainerProps } from "./styles";
 
-export interface ButtonProps extends ComponentProps<typeof ButtonContainer> {
+export interface ButtonProps
+  extends ComponentProps<"button">, ButtonContainerProps {
   as?: ElementType;
+  children?: ReactElement;
 }
 
-export function Button(props: ButtonProps) {
-  return <ButtonContainer {...props} />;
-}
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (props, ref) => {
+    return <ButtonContainer ref={ref} {...props} />;
+  },
+);
 
-Button.displayName = 'Button';
+Button.displayName = "Button";

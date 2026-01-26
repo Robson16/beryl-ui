@@ -1,6 +1,11 @@
 import { Button, ButtonProps } from "@beryl-ui/react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ArrowRight } from "phosphor-react";
+import { ReactNode } from "react";
+
+type ButtonPropsWithStringChildren = Omit<ButtonProps, "children"> & {
+  children?: ReactNode;
+};
 
 export default {
   title: "Form/Button",
@@ -33,31 +38,31 @@ export default {
       action: "click",
     },
   },
-} as Meta<ButtonProps>;
+} as Meta<ButtonPropsWithStringChildren>;
 
-export const Primary: StoryObj<ButtonProps> = {};
+export const Primary: StoryObj<ButtonPropsWithStringChildren> = {};
 
-export const Secondary: StoryObj<ButtonProps> = {
+export const Secondary: StoryObj<ButtonPropsWithStringChildren> = {
   args: {
     variant: "secondary",
     children: "Create new",
   },
 };
 
-export const Tertiary: StoryObj<ButtonProps> = {
+export const Tertiary: StoryObj<ButtonPropsWithStringChildren> = {
   args: {
     variant: "tertiary",
     children: "Cancel",
   },
 };
 
-export const Small: StoryObj<ButtonProps> = {
+export const Small: StoryObj<ButtonPropsWithStringChildren> = {
   args: {
     size: "sm",
   },
 };
 
-export const WithIcon: StoryObj<ButtonProps> = {
+export const WithIcon: StoryObj<ButtonPropsWithStringChildren> = {
   args: {
     children: (
       <>
@@ -68,7 +73,7 @@ export const WithIcon: StoryObj<ButtonProps> = {
   },
 };
 
-export const Disabled: StoryObj<ButtonProps> = {
+export const Disabled: StoryObj<ButtonPropsWithStringChildren> = {
   args: {
     disabled: true,
   },
