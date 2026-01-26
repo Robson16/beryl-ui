@@ -1,8 +1,12 @@
 {
   "extends": "@beryl-ui/ts-config/react.json",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
   "include": [
     "src/**/*",
-    ".storybook",
-    "../react/src/@types"
+    ".storybook"
   ]
 }

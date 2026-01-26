@@ -21,13 +21,15 @@ pnpm add prettier @beryl-ui/prettier-config --save-dev
 
 ## ⚙️ Usage
 
-To use the configurations, extend them in your `.prettierrc.js` file or add a `prettier` entry in your `package.json`.
+To use the configurations, extend them in your `.prettierrc.json` file or add a `prettier` entry in your `package.json`.
 
-### Example of `.prettierrc.js`
+### Example of `.prettierrc.json`
 
-```javascript
-// .prettierrc.js
-module.exports = require('@beryl-ui/prettier-config');
+```json
+// .prettierrc.json
+{
+  "extends": "@beryl-ui/prettier-config"
+}
 ```
 
 ### Example in `package.json`

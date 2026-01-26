@@ -1,6 +1,7 @@
 {
   "extends": "@beryl-ui/ts-config/react.json",
   "compilerOptions": {
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "*": [
