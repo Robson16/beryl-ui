@@ -1,5 +1,11 @@
 # @beryl-ui/react
 
+## 2.2.2
+
+### Patch Changes
+
+- Fixed styling issues when composing the `Box` component (e.g., `styled(Box)`) by implementing `forwardRef`. This ensures that `className` and refs are passed down correctly to the underlying DOM element.
+
 ## 2.2.1
 
 ### Patch Changes
